@@ -1,0 +1,3 @@
+To connect this to github, use git remote add origin https://github.com/pdsteele/SteerClear.git
+
+Then use git push origin branchName to push to github
