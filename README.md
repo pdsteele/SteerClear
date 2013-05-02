@@ -1,4 +1,10 @@
 SteerClear
 ==========
 
-A Ruby on Rails Web Application for making WM Steer Clear Ride Requests 
+A Ruby on Rails Web Application for making WM Steer Clear Ride Requests
+
+ To pull from TFS, use git clone https://steerclear.visualstudio.com/DefaultCollection/_git/steer%20clear
+
+ Remember to use branches with git checkout -b "branchName"
+
+
