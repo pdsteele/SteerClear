@@ -27,7 +27,8 @@ module SteerClear
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
-    # config.time_zone = 'Central Time (US & Canada)'
+    config.time_zone = 'Eastern Time (US & Canada)'
+    config.active_record.default_timezone = :local
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
@@ -55,8 +56,15 @@ module SteerClear
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    config.assets.initialize_on_precompile = false # for ACTIVE ADMIN
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    #ACTIVE ADMIN - for heroku  - uncomment if issues with AA on heroku
+    #config.assets.initialize_on_precompile = false
+
+    # for sass-bootstrap
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end
