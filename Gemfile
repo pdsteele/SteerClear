@@ -2,8 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 gem 'geocoder', '~> 1.1.8' #for address distances https://github.com/alexreisner/geocoder for how to use
-#gem 'activeadmin', :github => 'gregbell/active_admin'  #https://github.com/gregbell/active_admin has good
-# documentation
+gem 'activeadmin', :github => 'gregbell/active_admin'  #https://github.com/gregbell/active_admin has good documentation
 gem 'sass-rails',   '~> 3.2.3'
 gem 'meta_search', '>= 1.1.0.pre'  #dependency for AA
 gem 'will_paginate', '3.0.3'
@@ -40,6 +39,7 @@ group :development, :test do
 end
 
 group :test do
+  gem 'mocha', require: false #needed to fix error
   gem 'capybara', '~> 2.0.2'
   gem 'launchy',  '~> 2.2.0'
 end
