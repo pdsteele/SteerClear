@@ -1,0 +1,161 @@
+$navbarBackground: #343A35;
+$navbarBackgroundHighlight: #343A35;
+$navbarBrandColor: #FFFFFF;
+$navbarBrandColorHover: darken($navbarBrandColor, 5%);
+$navbarLinkColor: #FFFFFF;
+$navbarLinkColorHover: #CFC329;
+$btnPrimaryBackground: #343A35;
+$linkColor: #216315;
+
+
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+
+.brand:hover {
+  color: #CFC329;
+  background-color: #343A35;
+}
+
+#topspace {
+  padding-top: 60px;
+}
+
+body {
+  background-color: #D7D7BC;
+  margin-bottom: 20px;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+#button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.4em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #343A35;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+}
+
+.content {
+  display: block;
+  font-size: 1.4em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+#link {
+  margin-top: 30px;
+}
+
+#timestamp {
+  color: $grayLight;
+  font-size: 1em;
+  font-weight: light;
+}
+
+.form_hint {
+  color: $grayLight;
+  font-size: .9em;
+  font-weight: light;
+  margin-bottom: 20px;
+}
+
+.field label {
+  font-size: 1.1em;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+// makes flashes responsive to both mobile and desktop
+.phone-flashes {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.form-page {
+  display: block;
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #555;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
