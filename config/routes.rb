@@ -6,6 +6,15 @@ SteerClear::Application.routes.draw do
 
   match '/about',   :to => 'pages#about'
   match '/contact', :to => 'pages#contact'
+  match '/employees', :to => 'pages#employeeinfo'
+
+  #for static hosted files
+  match '/ConstitutionBylaws.pdf', :to => 'pages#download_bylaws'
+  match '/HiringContract.doc', :to => 'pages#download_contract'
+  match '/TrainingEmploymentPacket2012-13.docx', :to => 'pages#download_training'
+  match '/PayrollProcess2012.doc', :to => 'pages#download_payroll'
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
