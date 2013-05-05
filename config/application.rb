@@ -61,9 +61,6 @@ module SteerClear
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    #ACTIVE ADMIN - for heroku  - uncomment if issues with AA on heroku
-    #config.assets.initialize_on_precompile = false
-
     # for sass-bootstrap
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
