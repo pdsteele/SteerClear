@@ -5,12 +5,13 @@ gem 'geocoder', '~> 1.1.8' #for address distances https://github.com/alexreisner
 gem 'activeadmin', :github => 'gregbell/active_admin'  #https://github.com/gregbell/active_admin has good documentation
 gem 'sass-rails',   '~> 3.2.3'
 gem 'meta_search', '>= 1.1.0.pre'  #dependency for AA
-gem 'will_paginate', '3.0.3'
+#gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'twitter-bootstrap-rails' #bootstrap-responsive friendly view generator - check out https://github.com/seyhunak/twitter-bootstrap-rails for using the generators - do NOT install this fully - ONLY USE GENERATOR FOR VIEWS
 gem 'devise' # authentication https://github.com/plataformatec/devise for how to use
 gem 'thin' #use as server instead of webrick - webrick mucks up logging with bootstrap
 gem 'formtastic' #for better forms with built in error reporting - similar syntax to AA - wiki is helpful here https://github.com/justinfrench/formtastic
+gem 'kaminari' #for pagination
 
 # Gems used only for assets and not required
 # in production environments by default.
