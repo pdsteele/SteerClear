@@ -67,4 +67,5 @@ SteerClear::Application.configure do
 
   #FOR ACTIVE ADMIN
   config.action_mailer.default_url_options = { :host => '#' } #Placeholder in host until determined
+  config.assets.initialize_on_precompile = false
 end
