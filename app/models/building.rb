@@ -3,5 +3,5 @@ class Building < ActiveRecord::Base
 
   validates :name, :presence => true, :uniqueness => { :case_sensitive => false }
 
-  default_scope order: 'Building.name DESC'
+  default_scope order('name ASC')
 end
