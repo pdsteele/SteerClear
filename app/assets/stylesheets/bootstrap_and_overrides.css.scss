@@ -49,12 +49,12 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
-  border-bottom: dotted;
-  border-bottom-color: #555555;
+  border-bottom: none;
 }
 
-#frontPage {
-  border-bottom:none;
+#staticPage {
+  border-bottom:dotted;
+  border-bottom-color: #555555;
 }
 
 h2 {
