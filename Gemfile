@@ -12,6 +12,7 @@ gem 'devise' # authentication https://github.com/plataformatec/devise for how to
 gem 'thin' #use as server instead of webrick - webrick mucks up logging with bootstrap
 gem 'formtastic' #for better forms with built in error reporting - similar syntax to AA - wiki is helpful here https://github.com/justinfrench/formtastic
 gem 'kaminari' #for pagination
+gem 'formtastic-bootstrap' #for styling formtastic forms with bootstrap
 
 # Gems used only for assets and not required
 # in production environments by default.

@@ -1,12 +1,17 @@
-<h2>Forgot your password?</h2>
+<div class="row-fluid">
+  <div class="span6 offset5">
+    <div class="form-page">
+      <h1>Forgot your password?</h1>
 
-<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
-  <%= devise_error_messages! %>
+      <%= semantic_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+          <%= f.inputs do %>
+              <%= f.input :email, :label => "Email", :autofocus => true %>
+          <% end %>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+          <div class="row-fluid" id="button"><%= f.action :submit, :label => "Send me reset password instructions", :button_html => { :class => "btn btn-large btn-primary" } %></div>
+      <% end %>
 
-  <div><%= f.submit "Send me reset password instructions" %></div>
-<% end %>
+    </div>
+  </div>
+</div>
 
-<%= render "devise/shared/links" %>

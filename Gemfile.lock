@@ -105,6 +105,8 @@ GEM
     ffi (1.8.1-x86-mingw32)
     formtastic (2.2.1)
       actionpack (>= 3.0)
+    formtastic-bootstrap (2.1.1)
+      formtastic (~> 2.2)
     geocoder (1.1.8)
     has_scope (0.5.1)
     highline (1.6.18)
@@ -258,6 +260,7 @@ DEPENDENCIES
   devise
   factory_girl_rails (~> 4.2.1)
   formtastic
+  formtastic-bootstrap
   geocoder (~> 1.1.8)
   jquery-rails
   kaminari

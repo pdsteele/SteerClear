@@ -1,37 +1,28 @@
 <div class="row-fluid">
-  <div class="span4 offset4">
+  <div class="span4 offset6">
     <div class="form-page">
 
-      <h1>Sign in</h1>
+      <h1>Steer Clear Login</h1>
 
       <%= semantic_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-          <!--<%= f.label :email %>-->
-          <!--<%= f.email_field :email, :autofocus => true %>-->
 
           <%= f.inputs do %>
 
               <%= f.input :email, :as => :email, :label => "WM Email", :autofocus => true %>
 
-              <!--<%= f.label :password %>-->
-              <!--<%= f.password_field :password %>-->
-
-              <%= f.input :password, :as => :password, :label => "Password", :hint => "Use your Steer Clear account password (NOT myWM, WMApps, Banner, etc...)" %>
+              <%= f.input :password, :as => :password, :label => "Password", :hint => "Hint: use your Steer Clear account password (NOT myWM, WMApps, Banner, etc...)" %>
 
               <% if devise_mapping.rememberable? -%>
-                  <%= f.input :remember_me, :as => :boolean %>
-                  <!--<%= f.label :remember_me %>-->
-                  <!--<%= f.check_box :remember_me %>-->
+                  <div class="form-inline"> <%= f.input :remember_me, :as => :boolean %> </div>
               <% end -%>
 
-          <% end %>
+          <% end %> <!-- end inputs -->
+          <div class="row-fluid" id="button">
+            <%= f.action :submit, :label => "Sign In", :button_html => { :class => "btn btn-large btn-primary" } %>
+            <!--<%= f.action :reset, :label => "Reset Fields", :button_html => { :class => "btn btn-large btn-primary" } %> -->
+          </div>
 
-          <%= f.actions :submit, :cancel, :wrapper_html => { :class => "btn btn-large btn-primary" } %>
-
-
-          <!--<div class="row-fluid" id="button">-->
-            <!--<%= f.submit "Sign in", class: "btn btn-large btn-primary" %>-->
-          <!--</div>-->
-      <% end %>
+      <% end %> <!-- ends form -->
 
       <%= render 'users/shared/links' %>
 
