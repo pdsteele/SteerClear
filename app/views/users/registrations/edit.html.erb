@@ -12,9 +12,17 @@
               <div class="form-inline"><%= f.input :text, :as => :boolean, :label => "Receive text alerts for pickup?", :hint => "Hint: this can be changed temporarily when you request a ride, or permanently by editing your profile" %></div>
               <%= f.input :phone, :as => :phone, :label => "Cell Phone Number" %>
 
-              <div class="form-inline"><%= f.input :onCampus, :as => :boolean, :label => "Is this an on campus building?" %></div>
-              <!-- NEED to figure out how to use ajax to modify this based on input to oncampus -->
-              <%= f.input :address, :as => :string, :label => "House/Apt Number and Street", :append => ' Williamsburg, VA' %>
+              <div class="form-inline onCampus">
+                <%= f.check_box :onCampus, :id => "onCampus" %>
+                <%= f.label "Is this an on campus building?" %>
+              </div>
+              <div class="address1">
+                <%= f.input :address, :as => :string, :label => "House/Apt Number and Street", :append => ' Williamsburg, VA' %>
+              </div>
+              <div class="address2">
+                <%= f.input :address, :as => :select, :collection => Building.all.map(&:name), :label => 'Campus Building' %>
+              </div>
+
               <%= f.input :current_password, :as => :password, :label => "Current Password", :hint=> "Hint: we need your current password to confirm your changes" %>
               <%= f.input :password, :as => :password, :label => "New Password", :hint => "Hint: leave these fields blank if you do not want to change it", , :autocomplete => "off" %>
               <%= f.input :password_confirmation, :as => :password, :label => "New Password Confirmation" %>
