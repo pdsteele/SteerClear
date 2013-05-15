@@ -5,4 +5,6 @@
 jQuery ->
   $("#onCampus").on "click", (e) ->
     $(".address1").slideToggle "fast"
+
+    $('.address2').html("<%= escape_javascript(render( :partial => 'address_form' )) %>")
     $(".address2").slideToggle "fast"

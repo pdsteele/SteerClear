@@ -23,7 +23,7 @@
                 <%= f.input :address, :as => :string, :label => "House/Apt Number and Street", :append => ' Williamsburg, VA' %>
               </div>
               <div class="address2">
-                <%= f.input :address, :as => :select, :collection => Building.all.map(&:name), :label => 'Campus Building' %>
+
               </div>
 
               <%= f.input :password, :as => :password, :label => "Password", :hint => "Hint: can be different from your myWM/WMApps/Banner password" %>

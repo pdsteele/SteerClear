@@ -74,8 +74,8 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
+        <div class="span12"> <%= bootstrap_flash %></div> <!-- alerts may need more fixing -->
         <div class="span9"> <!-- renders content of the page -->
-          <%= bootstrap_flash %>
           <%= yield %>
         </div>
       </div><!--/row-->
