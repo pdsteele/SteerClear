@@ -20,7 +20,8 @@
                 <%= f.input :address, :as => :string, :label => "House/Apt Number and Street", :append => ' Williamsburg, VA' %>
               </div>
               <div class="address2">
-                <%= f.input :address, :as => :select, :collection => Building.all.map(&:name), :label => 'Campus Building' %>
+                <!-- has secondary class of ad2 for disabling the field with jquery -->
+                <%= f.input :address, :as => :select, :collection => Building.all.map(&:name), :label => 'Campus Building', :input_html => { :disabled => true }, :wrapper_html => { :class => "ad2" } %>
               </div>
 
               <%= f.input :current_password, :as => :password, :label => "Current Password", :hint=> "Hint: we need your current password to confirm your changes" %>
