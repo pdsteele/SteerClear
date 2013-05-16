@@ -4,7 +4,7 @@
 
       <h1>Edit <%= resource_name.to_s.humanize %></h1>
 
-      <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+      <%= semantic_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
           <%= f.inputs do %>
 
               <%= f.input :name, :as => :string, :label => "Preferred Name", :hint => "" %>
@@ -24,9 +24,9 @@
                 <%= f.input :address, :as => :select, :collection => Building.all.map(&:name), :label => 'Campus Building', :input_html => { :disabled => true }, :wrapper_html => { :class => "ad2" } %>
               </div>
 
-              <%= f.input :current_password, :as => :password, :label => "Current Password", :hint=> "Hint: we need your current password to confirm your changes" %>
-              <%= f.input :password, :as => :password, :label => "New Password", :hint => "Hint: leave these fields blank if you do not want to change it", , :autocomplete => "off" %>
-              <%= f.input :password_confirmation, :as => :password, :label => "New Password Confirmation" %>
+              <%= f.input :current_password, :as => :password, :label => "Current Password", :hint=> "Hint: we need your current password to confirm your changes", :required => true %>
+              <%= f.input :password, :as => :password, :label => "New Password", :hint => "Hint: leave these fields blank if you do not want to change it", :autocomplete => "off" %>
+              <%= f.input :password_confirmation, :as => :password, :label => "New Password Confirmation", :required => false %>
 
           <% end %> <!-- end inputs -->
 

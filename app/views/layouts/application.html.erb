@@ -48,26 +48,30 @@
           <div class="container-fluid nav-collapse">
             <ul class="nav pull-right">
               <!-- links for not logged in -->
-              <li><%= link_to "Sign Up", "/users/sign_up" %></li>
-              <li><%= link_to "Log In", "/users/sign_in" %></li>
-              <!--&lt;!&ndash; links for users &ndash;&gt;-->
-              <!--<li><%= link_to "Create Ride Request", "#"  %></li>-->
-              <!--<li><%= link_to "Edit Profile", "#"  %></li>-->
-              <!--<li><%= link_to "Logout", "#"  %></li>-->
-              <!--&lt;!&ndash; links for workers &ndash;&gt;-->
+              <% if !user_signed_in? %> <!-- add worker here when generated -->
+                <li><%= link_to "Sign Up", "/users/sign_up" %></li>
+                <li><%= link_to "Log In", "/users/sign_in" %></li>
+              <% elsif user_signed_in? %>
+                <!-- links for logged in users -->
+                <li><%= link_to "My Rides", "/users"  %></li>
+                <li><%= link_to "Edit Profile", "/users/edit"  %></li>
+                <li><%= link_to "Log Out", "/users/sign_out", method: "delete"  %></li>
+              <!--<% elsif worker_signed_in? %>-->
+                <!--&lt;!&ndash; links for workers &ndash;&gt;-->
                 <!--&lt;!&ndash; links for workers unassociated with an active van &ndash;&gt;-->
-                <!--<li><%= link_to "Begin a Shift", "#"  %></li>   -->
+                    <!--<li><%= link_to "Begin a Shift", "#"  %></li>   -->
                 <!--&lt;!&ndash; links for workers that are associated with an active van &ndash;&gt;-->
-                <!--<li><%= link_to "Unclaimed Ride Requests", "#"  %></li>-->
-                <!--<li><%= link_to "Your Ride Requests", "#"  %></li>-->
-                <!--<li><%= link_to "Create a Ride Request", "#"  %></li>-->
-                <!--<li><%= link_to "End this Shift", "#" %></li>-->
+                    <!--<li><%= link_to "Unclaimed Ride Requests", "#"  %></li>-->
+                    <!--<li><%= link_to "Your Ride Requests", "#"  %></li>-->
+                    <!--<li><%= link_to "Create a Ride Request", "#"  %></li>-->
+                    <!--<li><%= link_to "End this Shift", "#" %></li>-->
                 <!--&lt;!&ndash; end conditional &ndash;&gt;                -->
               <!--<li><%= link_to "Edit Profile", "#"  %></li>-->
               <!--<li><%= link_to "Logout", "#"  %></li>-->
+              <% end %>
               <!-- end links -->
             </ul>
-          </div><!--/.nav-collapse -->
+          </div><!-- end .nav-collapse menu -->
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 SteerClear::Application.routes.draw do
 
-  devise_for :users#, :controllers => { :sessions => "user/sessions" }
+  devise_for :users, :controllers => { :registrations => "users/registrations" }
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -8,7 +8,7 @@ SteerClear::Application.routes.draw do
   root :to => 'pages#home'
 
 
-
+  match '/users', :to => 'users#show'
   match '/about',   :to => 'pages#about'
   match '/contact', :to => 'pages#contact'
   match '/employees', :to => 'pages#employeeinfo'
