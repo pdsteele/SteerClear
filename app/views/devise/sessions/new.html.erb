@@ -1,17 +1,31 @@
-<h2>Sign in</h2>
+<div class="row-fluid">
+  <div class="span6 offset4">
+    <div class="form-page">
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+      <h1>Steer Clear <%= resource_name.to_s.titleize %> Login</h1>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+      <%= semantic_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
+          <%= f.inputs do %>
 
-  <div><%= f.submit "Sign in" %></div>
-<% end %>
+              <%= f.input :email, :as => :email, :label => "WM Email", :autofocus => true %>
 
-<%= render "devise/shared/links" %>
+              <%= f.input :password, :as => :password, :label => "Password", :hint => "Hint: use your Steer Clear worker account password (NOT myWM, WMApps, Banner, SC user account, etc...)" %>
+
+              <% if devise_mapping.rememberable? -%>
+                  <div class="form-inline"> <%= f.input :remember_me, :as => :boolean %> </div>
+              <% end -%>
+
+          <% end %> <!-- end inputs -->
+          <div class="row-fluid" id="button">
+            <%= f.action :submit, :label => "Sign In", :button_html => { :class => "btn btn-large btn-primary" } %>
+            <!--<%= f.action :reset, :label => "Reset Fields", :button_html => { :class => "btn btn-large btn-primary" } %> -->
+          </div>
+
+      <% end %> <!-- ends form -->
+
+      <%= render 'devise/shared/links' %>
+
+    </div>
+  </div>
+</div>

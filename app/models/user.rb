@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
   validates :name, :presence => true
   validates :email, :presence => true,
             :uniqueness => { :case_sensitive => false },
-            :format => { :with => /\A([a-z]|\d)+@([a-z]+.|)wm.edu\z/i, :message => "is not a valid wm email" }
+            :format => { :with => /\A([a-z]|\d)+@([a-z]+.|)wm.edu\z/i, :message => "Must be a William and Mary email address" }
   validates :password, :confirmation => true
   validates :password_confirmation, :presence => true
   validates :address, :presence => true

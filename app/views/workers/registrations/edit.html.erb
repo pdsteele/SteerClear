@@ -9,20 +9,7 @@
 
               <%= f.input :name, :as => :string, :label => "Preferred Name", :hint => "" %>
               <%= f.input :email, :as => :email, :label => "WM Email", :hint => "Hint: you must use a @*.wm.edu email address to verify your status as a WM student" %>
-              <div class="form-inline"><%= f.input :text, :as => :boolean, :label => "Receive text alerts for pickup?", :hint => "Hint: this can be changed temporarily when you request a ride, or permanently by editing your profile" %></div>
               <%= f.input :phone, :as => :phone, :label => "Cell Phone Number" %>
-
-              <div class="form-inline onCampus">
-                <%= f.check_box :onCampus, :id => "onCampus" %>
-                <%= f.label "Is this an on campus building?" %>
-              </div>
-              <div class="address1">
-                <%= f.input :address, :as => :string, :label => "House/Apt Number and Street", :append => ' Williamsburg, VA' %>
-              </div>
-              <div class="address2">
-                <!-- has secondary class of ad2 for disabling the field with jquery -->
-                <%= f.input :address, :as => :select, :collection => Building.all.map(&:name), :label => 'Campus Building', :input_html => { :disabled => true }, :wrapper_html => { :class => "ad2" } %>
-              </div>
 
               <%= f.input :current_password, :as => :password, :label => "Current Password", :hint=> "Hint: we need your current password to confirm your changes", :required => true %>
               <%= f.input :password, :as => :password, :label => "New Password", :hint => "Hint: leave these fields blank if you do not want to change it", :autocomplete => "off" %>
@@ -34,12 +21,6 @@
           <div class="row-fluid" id="button"><%= f.action :reset, :label => "Reset Fields", :button_html => { :class => "btn btn-large btn-primary" } %> </div>
 
       <% end %>  <!-- end form -->
-
-      <h1>Cancel my account</h1>
-
-      <h2>
-        <%= link_to "Unhappy with Steer Clear? You can delete your account with all history of your rides", registration_path(resource_name), :data => { :confirm => "Are you sure? :(" }, :method => :delete %>
-      </h2>
 
     </div>
   </div>
