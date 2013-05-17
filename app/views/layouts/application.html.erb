@@ -47,27 +47,19 @@
           <a class="brand" href="/">Steer Clear</a>
           <div class="container-fluid nav-collapse">
             <ul class="nav pull-right">
-              <!-- links for not logged in -->
-              <% if !user_signed_in? %> <!-- add worker here when generated -->
-                <li><%= link_to "Sign Up", "/users/sign_up" %></li>
-                <li><%= link_to "Log In", "/users/sign_in" %></li>
-              <% elsif user_signed_in? %>
+              <% if user_signed_in? %>
                 <!-- links for logged in users -->
                 <li><%= link_to "My Rides", "/users"  %></li>
-                <li><%= link_to "Edit Profile", "/users/edit"  %></li>
+                <li><%= link_to "Edit User Profile", "/users/edit"  %></li>
                 <li><%= link_to "Log Out", "/users/sign_out", method: "delete"  %></li>
-              <!--<% elsif worker_signed_in? %>-->
-                <!--&lt;!&ndash; links for workers &ndash;&gt;-->
-                <!--&lt;!&ndash; links for workers unassociated with an active van &ndash;&gt;-->
-                    <!--<li><%= link_to "Begin a Shift", "#"  %></li>   -->
-                <!--&lt;!&ndash; links for workers that are associated with an active van &ndash;&gt;-->
-                    <!--<li><%= link_to "Unclaimed Ride Requests", "#"  %></li>-->
-                    <!--<li><%= link_to "Your Ride Requests", "#"  %></li>-->
-                    <!--<li><%= link_to "Create a Ride Request", "#"  %></li>-->
-                    <!--<li><%= link_to "End this Shift", "#" %></li>-->
-                <!--&lt;!&ndash; end conditional &ndash;&gt;                -->
-              <!--<li><%= link_to "Edit Profile", "#"  %></li>-->
-              <!--<li><%= link_to "Logout", "#"  %></li>-->
+              <% elsif worker_signed_in? %>
+                  <!-- links for logged in workers -->
+                  <li><%= link_to "Worker Dashboard", "/workers"  %></li>
+                  <li><%= link_to "Edit Profile", "/workers/edit"  %></li>
+                  <li><%= link_to "Log Out", "/workers/sign_out", :data => { :confirm => "Warning: This will end your shift and re-queue any rides you have accepted. Please ensure you have completed your shift." }, method: "delete"  %></li>
+              <% else %> <!-- for non-logged on users/workers -->
+                  <li><%= link_to "Sign Up", "/users/sign_up" %></li>
+                  <li><%= link_to "Log In", "/users/sign_in" %></li>
               <% end %>
               <!-- end links -->
             </ul>
@@ -77,8 +69,30 @@
     </div>
 
     <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span12"> <%= bootstrap_flash %></div> <!-- alerts may need more fixing -->
+      <div class="row-fluid">  <!-- row for alerts -->
+        <!--<div class="span6 offset3"><div class="alert-info"> <%= bootstrap_flash %></div></div> &lt;!&ndash; alerts may need more fixing &ndash;&gt;-->
+        <div class="span6 offset3">
+        <div class="hidden-phone">
+          <% flash.each do |key, value| %>
+              <div class="alert alert-<%= key %>">
+                <%= value %>
+                <a class="close" data-dismiss="alert" href="#">&times;</a>
+              </div>
+          <% end %>
+        </div>
+        </div>
+
+        <div class="visible-phone phone-flashes">
+          <% flash.each do |key, value| %>
+              <div class="alert alert-<%= key %>">
+                <%= value %>
+                <a class="close" data-dismiss="alert" href="#">&times;</a>
+              </div>
+          <% end %>
+        </div>
+       </div>  <!-- ends row fluid -->
+
+      <div class="row-fluid"> <!-- content row -->
         <div class="span9"> <!-- renders content of the page -->
           <%= yield %>
         </div>

@@ -1,7 +1,18 @@
-class workers::RegistrationsController < Devise::RegistrationsController
+class Workers::RegistrationsController < Devise::RegistrationsController
   #overriden controller code courtesy of devise wiki
+
+  def new
+    flash[:error] = "WARNING: You must contact an administrator to create a worker account!"
+    redirect_to "/workers"
+  end
+
+  def create
+    flash[:error] = "WARNING: You must contact an administrator to create a worker account!"
+    redirect_to "/workers"
+  end
+
   def update
-    @worker = worker.find(current_worker.id)
+    @worker = Worker.find(current_worker.id)
 
     if !needs_password?(@worker, params)
       params[:worker][:password] = params[:worker][:current_password]

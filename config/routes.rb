@@ -1,8 +1,8 @@
 SteerClear::Application.routes.draw do
 
-  devise_for :workers, :controllers => { :registrations => "workers/registrations" }
+  devise_for :workers, :controllers => { :registrations => "workers/registrations", :sessions => "workers/sessions" }
 
-  devise_for :users, :controllers => { :registrations => "users/registrations" }
+  devise_for :users, :controllers => { :registrations => "users/registrations", :sessions => "users/sessions" }
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
