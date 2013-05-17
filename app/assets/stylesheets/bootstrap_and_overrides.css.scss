@@ -135,7 +135,7 @@ aside {
   }
 }
 
-// makes flashes responsive to both mobile and desktop
+//makes flashes responsive to both mobile and desktop
 .phone-flashes {
   padding-top: 1em;
   padding-bottom: 2em;
@@ -175,4 +175,8 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 10px;
+}
+
+.alert {
+  text-align: center;
 }
