@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="993996f5-f357-4b30-a70c-ee6c30f19e71" name="Default" comment="user views refactored to reflect DRY principles for user story #5. workers generated with devise compatibility. worker views created. worker controller created, as well as registration override. routes configured for workers. AA workers can be created/edited. Only issue that remains is that workers cannot log in (unauthorized). all for user story #7 and user story #10">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pages.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pages.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="993996f5-f357-4b30-a70c-ee6c30f19e71" name="Default" comment="user views refactored to reflect DRY principles for user story #5. workers generated with devise compatibility. worker views created. worker controller created, as well as registration override. routes configured for workers. AA workers can be created/edited. Only issue that remains is that workers cannot log in (unauthorized). all for user story #7 and user story #10" />
     <ignored path="SteerClear.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368821092343" ignored="false" />
@@ -40,6 +36,7 @@
     <file path="/workers.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368744707026" ignored="false" />
     <file path="/workers_controller.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368744957340" ignored="false" />
     <file path="/sessions_controller.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368816052841" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368823893702" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,19 +133,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap_and_overrides.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bootstrap_and_overrides.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="1" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0">
+            <state line="88" column="6" selection-start="1229" selection-end="1230" vertical-scroll-proportion="4.543021">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pages.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pages.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="1" selection-start="249" selection-end="249" vertical-scroll-proportion="0.3941606">
+            <state line="5" column="84" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1153,7 +1150,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1046" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1046" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921347" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1347,16 +1344,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="1" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0">
+        <state line="5" column="84" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="1" selection-start="249" selection-end="249" vertical-scroll-proportion="0.3941606">
+        <state line="88" column="6" selection-start="1229" selection-end="1230" vertical-scroll-proportion="4.543021">
           <folding />
         </state>
       </provider>
