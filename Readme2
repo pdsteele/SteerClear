@@ -1,3 +1,8 @@
 To connect this to github, use git remote add origin https://github.com/pdsteele/SteerClear.git
 
 Then use git push origin branchName to push to github
+
+So actually, for TFS, you need to create a new folder
+Run git init 
+then 
+git remote add tfs https://steerclear.visualstudio.com/DefaultCollection/_git/Steer-Clear
