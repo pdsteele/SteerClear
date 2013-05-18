@@ -1,17 +1,41 @@
 <!-- main user page that shows active ride requests, old ride requests, and form to create new ride request -->
 <!-- use .js for all form submission and coffeescript for showing/hiding tables -->
+<div class="span10 offset3">
 
-<div class="row-fluid">
-  <div class="span10 offset3">
-    <h1><%= current_worker.name %>'s Ride Requests</h1>
-
-    <h1>Start a shift!</h1>
-
-    <h1>Create a new Ride Request</h1>
-
-    <h1>Active Ride Requests</h1>
-
-    <h1>Ride Request Queue</h1>
-
+  <div class="row-fluid">
+    <h1><%= current_worker.name %>'s Dashboard</h1>
   </div>
+
+
+  <div class="row-fluid">
+    <div id="noShift">
+      <h1>Start a shift!</h1>
+      <%= render "shiftForm" %>
+    </div>
+  </div>
+
+  <div class="row-fluid">
+    <div id="shiftStarted">
+      <h1>Create a new Ride Request</h1>
+    </div>
+  </div>
+
+  <div class="row-fluid">
+    <div id="shiftActive">
+      <h1>Accepted Ride Request</h1>
+    </div>
+  </div>
+
+  <div class="row-fluid">
+    <div id="shiftStarted">
+      <h1>Ride Request Queue</h1>
+    </div>
+  </div>
+
+  <div class="row-fluid">
+    <div id="shiftActive">
+      <h1>Do not accept any more rides</h1>
+    </div>
+  </div>
+
 </div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130516214906) do
+ActiveRecord::Schema.define(:version => 20130518012413) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -51,6 +51,18 @@ ActiveRecord::Schema.define(:version => 20130516214906) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "shifts", :force => true do |t|
+    t.boolean  "inService"
+    t.integer  "driver_id"
+    t.integer  "navigator_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "shifts", ["driver_id", "navigator_id"], :name => "index_shifts_on_driver_id_and_navigator_id"
+  add_index "shifts", ["driver_id"], :name => "index_shifts_on_driver_id"
+  add_index "shifts", ["navigator_id"], :name => "index_shifts_on_navigator_id"
 
   create_table "users", :force => true do |t|
     t.string   "name"
@@ -96,6 +108,7 @@ ActiveRecord::Schema.define(:version => 20130516214906) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.boolean  "activeShift"
   end
 
   add_index "workers", ["email"], :name => "index_workers_on_email", :unique => true
