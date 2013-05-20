@@ -1,6 +1,7 @@
 //alert("Shift started!")
 
 //$("#noShift").slideToggle("fast");
-$("#noShift").html('<h1>Shift started at <%= @shift.created_at %></h1>');
-//$("#noShift").slideToggle("fast");
-$("#shiftStarted").show();
+//$("#noShift").html('<h1>Shift started at <%= @shift.created_at.to_formatted_s("%b %d %Y %H:%M") %></h1>');
+$("#noShift").slideToggle("fast");
+$("#shiftNowStarted").html(<%= escape_javascript(render('workers/startedNotActive')) %>)
+$("#shiftNowStarted").slideToggle("fast");

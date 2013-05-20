@@ -6,36 +6,19 @@
     <h1><%= current_worker.name %>'s Dashboard</h1>
   </div>
 
+  <% if current_worker.activeShift == false %>
+      <!-- render nonactive shift page -->
+      <%= render "notStarted" %>
 
-  <div class="row-fluid">
-    <div id="noShift">
-      <h1>Start a shift!</h1>
-      <%= render "shiftForm" %>
-    </div>
-  </div>
+  <% elsif current_worker.currentShift.inService == false  %>
+      <!-- render shift started but not active page -->
+      <%= render "startedNotActive" %>
 
-  <div class="row-fluid">
-    <div id="shiftStarted">
-      <h1>Create a new Ride Request</h1>
-    </div>
-  </div>
+  <% elsif current_worker.currentShift.inService == true %>
+      <!-- render the active shift page -->
+      <%= render "startedActive" %>
 
-  <div class="row-fluid">
-    <div id="shiftActive">
-      <h1>Accepted Ride Request</h1>
-    </div>
-  </div>
+  <% end %>
 
-  <div class="row-fluid">
-    <div id="shiftStarted">
-      <h1>Ride Request Queue</h1>
-    </div>
-  </div>
-
-  <div class="row-fluid">
-    <div id="shiftActive">
-      <h1>Do not accept any more rides</h1>
-    </div>
-  </div>
 
 </div>

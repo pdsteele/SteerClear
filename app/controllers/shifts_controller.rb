@@ -6,7 +6,8 @@ class ShiftsController < ApplicationController
 
   def create
     @shift = Shift.new(params[:shift])
-    @shift.inService = true
+    @shift.shiftActive = true
+    @shift.inService = false
 
     @driver = Worker.find(params[:shift][:driver_id])
     @navigator = Worker.find(params[:shift][:navigator_id])
@@ -41,6 +42,8 @@ class ShiftsController < ApplicationController
 
     @driver.activeShift = false
     @navigator.activeShift = false
+
+    @shift.shiftActive = false
 
 
     @driver.save

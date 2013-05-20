@@ -29,9 +29,20 @@ class Worker < ActiveRecord::Base
       Worker.where("activeShift = ?", false).map{ |worker| [worker.name, worker.id] }
     end
 
+    def currentShift
+      @navShift = self.navShifts.where("shiftActive = ?", true)
+      @driveShift = self.drivingShifts.where("shiftActive = ?", true)
+
+      if (@navShift.count != 0)
+        @navShift[0]
+      elsif(@driveShift != 0)
+        @driveShift[0]
+      end
+    end
+
   private
     def set_default
-      self.activeShifts = false
+      self.activeShift = false
     end
 
 

@@ -9,9 +9,9 @@ class WorkersController < ApplicationController
       @worker = Worker.find(current_worker.id)
 
       #if no shift is started, generate a new shift object
-      if (!@worker.activeShift?)
-        @shift = @worker.navShifts.new
-      end
+      #if (!@worker.activeShift?)
+      #  @shift = @worker.navShifts.new
+      #end
 
       respond_to do |format|
         format.js
