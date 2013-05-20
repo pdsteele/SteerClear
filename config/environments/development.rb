@@ -35,6 +35,9 @@ SteerClear::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
+  # to avoid double loading javascript and stuff, use separate assets folder for development
+  config.assets.prefix = "/public/assets_dev"
+
   #For active_admin
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
