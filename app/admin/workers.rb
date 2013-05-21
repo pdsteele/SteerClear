@@ -7,6 +7,7 @@ ActiveAdmin.register Worker do
       f.input :phone
       f.input :password, :hint => "Can be the same as their user Steer Clear account"
       f.input :password_confirmation
+      f.input :activeShift, :as => :hidden, :value => :false
     end
     f.buttons
   end

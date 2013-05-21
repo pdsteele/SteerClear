@@ -1,0 +1,3 @@
+<div class="form-page btn btn-large btn-primary button">
+    <%= link_to "Begin Accepting Rides", { :controller=>"shifts", :action => "makeInService", :id => current_worker.currentShift.id }, :method => :put, :remote => "true" %>
+</div>

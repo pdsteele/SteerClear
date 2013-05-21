@@ -14,14 +14,13 @@ jQuery ->
   $("#onCampus").on "click", (e) ->
     #if address 2 is hidden, enable it
     if ($(".address2").is(":hidden"))
-        $('.ad2 :input').removeAttr('disabled')
-
+      $('.ad2 :input').removeAttr('disabled')
+    else
+      $('.ad2 :input').attr('disabled', true)
 
     $(".address1").slideToggle "fast"
     $(".address2").slideToggle "fast"
 
-    #if address 2 is hidden after the toggle, disable it
-    if ($(".address2").is(":hidden"))
-        $('.ad2 :input').attr('disabled', true)
+
 
 

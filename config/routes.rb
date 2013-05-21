@@ -13,6 +13,12 @@ SteerClear::Application.routes.draw do
   root :to => 'pages#home'
 
 
+  match '/workers/startShift', :to => 'shifts#create'
+  match '/workers/:id/inService/', :to => 'shifts#makeInService'
+  match '/workers/:id/offService/', :to => 'shifts#makeOffService'
+  match '/workers/:id/endShift', :to => 'shifts#endShift'
+
+
   match '/users', :to => 'users#show'
   match '/workers', :to => 'workers#show'
   match '/about',   :to => 'pages#about'

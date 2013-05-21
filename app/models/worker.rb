@@ -5,8 +5,6 @@ class Worker < ActiveRecord::Base
   devise :database_authenticatable, :registerable, #need to ensure AA can still create, and worker themself can modify
          :recoverable, :rememberable, :trackable, :validatable
 
-  before_create :set_default
-
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
   attr_accessible :email, :name, :phone, :activeShift
@@ -39,11 +37,5 @@ class Worker < ActiveRecord::Base
         @driveShift[0]
       end
     end
-
-  private
-    def set_default
-      self.activeShift = false
-    end
-
 
 end

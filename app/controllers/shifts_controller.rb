@@ -1,9 +1,5 @@
 class ShiftsController < ApplicationController
 
-  #def new
-  #  @shift = Shift.new
-  #end
-
   def create
     @shift = Shift.new(params[:shift])
     @shift.shiftActive = true
@@ -17,12 +13,12 @@ class ShiftsController < ApplicationController
       redirect_to "workers/show"
     end
 
-    #UNCOMMENT WHEN DONE TESTING
-    #@driver.activeShift = true
-    #@navigator.activeShift = true
 
-    if @shift.save #and @driver.save and @navigator.save
-      flash[:success] = "Your shift has begun!"
+    @driver.activeShift = true
+    @navigator.activeShift = true
+
+    if @shift.save and @driver.save and @navigator.save
+      #flash[:success] = "Your shift has begun!"
       respond_to do |format|
         format.js
 
@@ -35,7 +31,29 @@ class ShiftsController < ApplicationController
 
   end
 
-  def destroy
+  def makeInService
+    @shift = Shift.find(params[:id])
+    @shift.inService = true
+
+    if @shift.save
+      respond_to do |format|
+        format.js
+      end
+    end
+  end
+
+  def makeOffService
+    @shift = Shift.find(params[:id])
+    @shift.inService = false
+
+    if @shift.save
+      respond_to do |format|
+        format.js
+      end
+    end
+  end
+
+  def endShift
     @shift = Shift.find(params[:id])
     @driver = Worker.find(params[:shift][:driver_id])
     @navigator = Worker.find(params[:shift][:navigator_id])
@@ -46,10 +64,11 @@ class ShiftsController < ApplicationController
     @shift.shiftActive = false
 
 
-    @driver.save
-    @navigator.save
-
-    @shift.destroy #change to @shift.inServer = false and @shift.save
+    if @driver.save and @navigator.save and @shift.save
+      respond_to do |format|
+        format.js
+      end
+    end
 
   end
 
