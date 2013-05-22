@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130520192230) do
+ActiveRecord::Schema.define(:version => 20130521220449) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -56,10 +56,11 @@ ActiveRecord::Schema.define(:version => 20130520192230) do
     t.boolean  "inService"
     t.integer  "driver_id"
     t.integer  "navigator_id"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
     t.boolean  "shiftActive"
     t.datetime "shiftEndTime"
+    t.float    "shiftActiveLength"
   end
 
   add_index "shifts", ["driver_id", "navigator_id"], :name => "index_shifts_on_driver_id_and_navigator_id"

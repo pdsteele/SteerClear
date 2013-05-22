@@ -1,3 +1,10 @@
-<div class="form-page btn btn-large btn-primary button">
-  <%= link_to "Stop Accepting Rides", { :controller=>"shifts", :action => "makeOffService", :id => current_worker.currentShift.id }, :method => :put, :remote => "true" %>
+<div class="form-page">
+  <%= semantic_form_for(current_worker.currentShift, :url => workers_offService_path, :remote => true) do |f| %>
+      <%= f.inputs do %>
+          <%= f.input :inService, :as => :hidden, :value => false %>
+      <% end %>
+
+      <div class="row-fluid" id="button"><%= f.action :submit, :label => "Stop Accepting Rides", :button_html => { :class => "btn btn-large btn-primary", :disable_with => 'Please wait...' } %></div>
+
+  <% end %>
 </div>

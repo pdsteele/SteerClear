@@ -14,9 +14,9 @@ SteerClear::Application.routes.draw do
 
 
   match '/workers/startShift', :to => 'shifts#create'
-  match '/workers/:id/inService/', :to => 'shifts#makeInService'
-  match '/workers/:id/offService/', :to => 'shifts#makeOffService'
-  match '/workers/:id/endShift', :to => 'shifts#endShift'
+  match '/workers/inService/', :to => 'shifts#makeInService'
+  match '/workers/offService/', :to => 'shifts#makeOffService'
+  match '/workers/endShift/', :to => 'shifts#endShift'
 
 
   match '/users', :to => 'users#show'

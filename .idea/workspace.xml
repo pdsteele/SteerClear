@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="993996f5-f357-4b30-a70c-ee6c30f19e71" name="Default" comment="many partials made for user story #14">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/workers/elements/_makeInServiceForm.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/workers/elements/_makeOffServiceForm.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shifts/endShift.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shifts/makeInService.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shifts/makeOffService.js.erb" />
+    <list default="true" id="993996f5-f357-4b30-a70c-ee6c30f19e71" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/workers/elements/_endShiftForm.html.erb" />
+      <change type="DELETED" beforePath="C:\Users\Philip\RubymineProjects\SteerClear\app\views\shifts\end.js.erb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workers/_notStarted.html.erb" afterPath="$PROJECT_DIR$/app/views/workers/_notStarted.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workers/elements/_makeInServiceForm.html.erb" afterPath="$PROJECT_DIR$/app/views/workers/elements/_makeInServiceForm.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workers/elements/_makeOffServiceForm.html.erb" afterPath="$PROJECT_DIR$/app/views/workers/elements/_makeOffServiceForm.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workers/elements/_shiftForm.html.erb" afterPath="$PROJECT_DIR$/app/views/workers/elements/_shiftForm.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workers/_startedActive.html.erb" afterPath="$PROJECT_DIR$/app/views/workers/_startedActive.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workers/_startedNotActive.html.erb" afterPath="$PROJECT_DIR$/app/views/workers/_startedNotActive.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shifts/create.js.erb" afterPath="$PROJECT_DIR$/app/views/shifts/create.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shifts/endShift.js.erb" afterPath="$PROJECT_DIR$/app/views/shifts/endShift.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/shift.rb" afterPath="$PROJECT_DIR$/app/models/shift.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/shifts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/shifts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/user.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/user.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/worker.rb" afterPath="$PROJECT_DIR$/app/models/worker.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/workers.rb" afterPath="$PROJECT_DIR$/app/admin/workers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/workers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/workers_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SteerClear.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369112103514" ignored="false" />
+    <file path="/Dummy.txt" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369173872297" ignored="false" />
     <file path="/README.md" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1367594208414" ignored="false" />
     <file path="/a.rxml" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1367607481678" ignored="false" />
     <file path="/a.coffee" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1367607484061" ignored="false" />
     <file path="/Gemfile" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1367600049669" ignored="false" />
     <file path="/database.yml" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1367594330997" ignored="false" />
     <file path="/application.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1367793304858" ignored="false" />
-    <file path="/pages_controller.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1367789979053" ignored="false" />
+    <file path="/pages_controller.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369181457847" ignored="false" />
     <file path="/home.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1367785765306" ignored="false" />
     <file path="/routes.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369088594694" ignored="false" />
     <file path="/application.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368819747101" ignored="false" />
@@ -51,17 +51,17 @@
     <file path="/worker.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369110823461" ignored="false" />
     <file path="/user.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368742336572" ignored="false" />
     <file path="/workers.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369111064725" ignored="false" />
-    <file path="/workers_controller.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368840403981" ignored="false" />
+    <file path="/workers_controller.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369173211570" ignored="false" />
     <file path="/sessions_controller.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368816052841" ignored="false" />
     <file path="/devise.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368826295431" ignored="false" />
-    <file path="/shift.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369077959909" ignored="false" />
+    <file path="/shift.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369181236118" ignored="false" />
     <file path="/20130517223523_create_shifts.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368831236063" ignored="false" />
-    <file path="/shifts_controller.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369089273314" ignored="false" />
-    <file path="/Ruby Console" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369081428856" ignored="false" />
+    <file path="/shifts_controller.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369180413170" ignored="false" />
+    <file path="/Ruby Console" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369181328409" ignored="false" />
     <file path="/workers.css.scss" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368844464514" ignored="false" />
     <file path="/show.js.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368837633503" ignored="false" />
     <file path="/workers.js.coffee" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368837797940" ignored="false" />
-    <file path="/_shiftForm.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368843559624" ignored="false" />
+    <file path="/_shiftForm.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369173253836" ignored="false" />
     <file path="/start.js.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368839591709" ignored="false" />
     <file path="/20130518012413_add_active_shifts_to_workers.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1368840849748" ignored="false" />
     <file path="/create.js.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369080609086" ignored="false" />
@@ -69,13 +69,16 @@
     <file path="/development.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369073276279" ignored="false" />
     <file path="/20130520192230_add_to_shifts.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369078155298" ignored="false" />
     <file path="/_notStarted.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369080447985" ignored="false" />
-    <file path="/_startedNotActive.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369087667936" ignored="false" />
-    <file path="/_startedActive.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369087654380" ignored="false" />
+    <file path="/_startedNotActive.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369179275555" ignored="false" />
+    <file path="/_startedActive.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369179125343" ignored="false" />
     <file path="/_makeActiveForm.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369087305031" ignored="false" />
-    <file path="/_makeInServiceForm.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369088250410" ignored="false" />
-    <file path="/_makeOffServiceForm.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369089031528" ignored="false" />
+    <file path="/_makeInServiceForm.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369171257151" ignored="false" />
+    <file path="/_makeOffServiceForm.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369171398244" ignored="false" />
     <file path="/makeOffService.js.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369089215376" ignored="false" />
     <file path="/endShift.js.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369089896721" ignored="false" />
+    <file path="/_endShiftForm.html.erb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369178712089" ignored="false" />
+    <file path="/20130521215730_add_length_of_shift_and_ride_acceptance.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369173598039" ignored="false" />
+    <file path="/20130521220449_add_active_length_to_shifts.rb" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369174429121" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,62 +103,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="workers_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/workers_controller.rb">
+      <file leaf-file-name="shift.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/shift.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="18" column="10" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registrations_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/workers/registrations_controller.rb">
+      <file leaf-file-name="pages_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="4" selection-start="281" selection-end="281" vertical-scroll-proportion="0.37850466">
+            <state line="12" column="7" selection-start="427" selection-end="427" vertical-scroll-proportion="0.5320197">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registrations_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users/registrations_controller.rb">
+      <file leaf-file-name="_notStarted.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/workers/_notStarted.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.js.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/user.js.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="45" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="worker.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/worker.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="2" selection-start="1914" selection-end="1914" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workers.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/admin/workers.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="50" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/registrations/edit.html.erb">
+      <file leaf-file-name="_startedActive.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/workers/_startedActive.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
@@ -166,16 +142,52 @@
       <file leaf-file-name="_startedNotActive.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/workers/_startedNotActive.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="8" selection-start="161" selection-end="161" vertical-scroll-proportion="-3.0">
+            <state line="8" column="28" selection-start="310" selection-end="310" vertical-scroll-proportion="13.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_startedActive.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/workers/_startedActive.html.erb">
+      <file leaf-file-name="shifts_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/shifts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="57" selection-start="337" selection-end="337" vertical-scroll-proportion="6.0">
+            <state line="14" column="52" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_endShiftForm.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/workers/elements/_endShiftForm.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="24" selection-start="184" selection-end="194" vertical-scroll-proportion="-2.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="worker.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/worker.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="14" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_makeOffServiceForm.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/workers/elements/_makeOffServiceForm.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="27" selection-start="246" selection-end="246" vertical-scroll-proportion="-3.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="endShift.js.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shifts/endShift.js.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -202,22 +214,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/shifts/create.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/workers/_notStarted.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/workers/elements/_makeActiveForm.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/workers/_startedNotActive.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shifts/makeInService.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/workers/elements/_makeInServiceForm.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/workers/registrations_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/workers/elements/_makeOffServiceForm.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/workers/_startedActive.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shifts/makeOffService.js.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/shifts_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/shifts/endShift.js.erb" />
-        <option value="$PROJECT_DIR$/app/admin/workers.rb" />
-        <option value="$PROJECT_DIR$/app/models/worker.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/user.js.coffee" />
-        <option value="$PROJECT_DIR$/app/controllers/workers/registrations_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/workers_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/workers/elements/_shiftForm.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130521215730_add_length_of_shift_and_ride_acceptance.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130520192230_add_to_shifts.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130521220449_add_active_length_to_shifts.rb" />
+        <option value="$PROJECT_DIR$/app/views/workers/elements/_makeInServiceForm.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/workers/elements/_endShiftForm.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/workers/_startedActive.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/workers/_startedNotActive.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/shifts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/shift.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
       </list>
     </option>
   </component>
@@ -291,6 +303,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SteerClear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SteerClear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -441,6 +471,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SteerClear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SteerClear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -977,8 +1029,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
-        <item index="1" class="java.lang.String" itemvalue="IRB console.Rails console: SteerClear" />
+        <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: SteerClear" />
+        <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate" />
         <item index="2" class="java.lang.String" itemvalue="IRB console.Rails console: SteerClear" />
         <item index="3" class="java.lang.String" itemvalue="Rake.db:create" />
       </list>
@@ -1068,7 +1120,11 @@
       <created>1369082647551</created>
       <updated>1369082647551</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="many partials made for user story #14. worker creation fixed for bug #19. fixed last of issues for user sign up form w.r.t address fields">
+      <created>1369112313953</created>
+      <updated>1369112313953</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1092,7 +1148,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1046" extended-state="0" />
+    <frame x="-11" y="-11" width="1942" height="1046" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921347" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1100,11 +1156,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995495" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6711712" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18996799" sideWeight="0.7522523" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18996799" sideWeight="0.7533784" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39977476" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995495" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24774775" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24662162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995495" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1157,7 +1213,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="more work towards starting shifts for user story #14" />
+    <option name="LAST_COMMIT_MESSAGE" value="many partials made for user story #14. worker creation fixed for bug #19. fixed last of issues for user sign up form w.r.t address fields" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1186,119 +1242,120 @@
     <MESSAGE value="shift model and controller generated. workers model modified to accomodate the concept of shifts. shifts can be created, but there is still a lot of work to be done on the worker show page (wrt js and jqurery stuff) in order to be ready to move on. this is for user story #14" />
     <MESSAGE value="fixied jquery double execution bug and issue with footer links on nested urls" />
     <MESSAGE value="more work towards starting shifts for user story #14" />
+    <MESSAGE value="many partials made for user story #14. worker creation fixed for bug #19. fixed last of issues for user sign up form w.r.t address fields" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/workers/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="56" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shifts/makeOffService.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/shifts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="9" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shifts/makeInService.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="66" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shifts/endShift.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/workers_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="5" column="2" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users/registrations_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130520192230_add_to_shifts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="23" selection-start="206" selection-end="206" vertical-scroll-proportion="0.2173913">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130521220449_add_active_length_to_shifts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="37" selection-start="129" selection-end="129" vertical-scroll-proportion="0.17391305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/workers/elements/_shiftForm.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="18" selection-start="599" selection-end="599" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/workers/elements/_makeInServiceForm.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="11" selection-start="458" selection-end="458" vertical-scroll-proportion="-6.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/workers/_notStarted.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/registrations/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8496503">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/worker.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="2" selection-start="1914" selection-end="1914" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/registrations/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/workers/_startedNotActive.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="161" selection-end="161" vertical-scroll-proportion="-3.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/workers/_startedActive.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="57" selection-start="337" selection-end="337" vertical-scroll-proportion="6.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/workers.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/workers/_startedNotActive.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="50" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+        <state line="8" column="28" selection-start="310" selection-end="310" vertical-scroll-proportion="13.75">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/shifts.js.coffee">
+    <entry file="file://$PROJECT_DIR$/app/views/workers/elements/_makeOffServiceForm.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="27" selection-start="246" selection-end="246" vertical-scroll-proportion="-3.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shifts/endShift.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/user.js.coffee">
+    <entry file="file://$PROJECT_DIR$/app/views/workers/elements/_endShiftForm.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="45" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
+        <state line="3" column="24" selection-start="184" selection-end="194" vertical-scroll-proportion="-2.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/workers/registrations_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/shifts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="4" selection-start="281" selection-end="281" vertical-scroll-proportion="0.37850466">
+        <state line="14" column="52" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/worker.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="14" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/shift.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="10" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="7" selection-start="427" selection-end="427" vertical-scroll-proportion="0.5320197">
           <folding />
         </state>
       </provider>

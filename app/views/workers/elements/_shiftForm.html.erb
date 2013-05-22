@@ -1,7 +1,7 @@
 <div class="form-page">
-  <%= semantic_form_for(@worker.navShifts.build(navigator_id: @worker.id), :remote => true) do |f| %>
+  <%= semantic_form_for(current_worker.navShifts.build(navigator_id: current_worker.id), :remote => true) do |f| %>
       <%= f.inputs do %>
-          <%= f.input :navigator, :label => "Navigator", :collection => Worker.availableWorkers, :selected => @worker.id %>
+          <%= f.input :navigator, :label => "Navigator", :collection => Worker.availableWorkers, :selected => current_worker.id %>
           <%= f.input :driver,  :collection => Worker.availableWorkers %>
       <% end %>
 
