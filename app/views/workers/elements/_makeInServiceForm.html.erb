@@ -1,7 +1,7 @@
 <div class="form-page">
   <%= semantic_form_for(current_worker.currentShift, :url => workers_inService_path, :remote => true) do |f| %>
       <%= f.inputs do %>
-          <%= f.input :inService, :as => :hidden, :value => true %>
+          <%= f.input :inService, :as => :hidden, :input_html => { :value => true } %>
       <% end %>
 
       <div class="row-fluid" id="button"><%= f.action :submit, :label => "Begin Accepting Rides", :button_html => { :class => "btn btn-large btn-primary", :disable_with => 'Please wait...' } %></div>

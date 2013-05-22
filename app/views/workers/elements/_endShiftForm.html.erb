@@ -1,7 +1,7 @@
 <div class="form-page">
   <%= semantic_form_for(current_worker.currentShift, :url => workers_endShift_path, :remote => true) do |f| %>
       <%= f.inputs do %>
-          <%= f.input :shiftActive, :as => :hidden, :value => false %>
+          <%= f.input :shiftActive, :as => :hidden, :input_html => { :value => false } %>
       <% end %>
 
       <div class="row-fluid" id="button"><%= f.action :submit, :label => "End Your Shift", :button_html => { :class => "btn btn-large btn-primary", :disable_with => 'Please wait...', :confirm => "Really end your shift?"  } %></div>

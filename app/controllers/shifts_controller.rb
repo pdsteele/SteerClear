@@ -2,23 +2,28 @@ class ShiftsController < ApplicationController
   before_filter :authenticate_worker!
 
   def create
-    @shift = Shift.new(params[:shift])
-    @shift.shiftActive = true  #SHIFT ACTIVE INDICATES THAT IT IS STARTED
-    @shift.inService = false #SHIFT IN SERVICE INDICATES THAT IT IS ACCEPTING RIDES
-    @shift.shiftActiveLength = 0.00
 
-    @driver = Worker.find(params[:shift][:driver_id])
-    @navigator = Worker.find(params[:shift][:navigator_id])
+    #catch if worker input identical nav/driver or didn't fill either in
+    if (params[:shift][:driver_id] == params[:shift][:navigator_id] || params[:shift][:driver_id] == "" || params[:shift][:navigator_id] == "")
+      flash[:error] = "The driver and navigator must exist and be unique workers"
+      respond_to do |format|
+        format.js { render :js => "window.location.href = '#{workers_path}'" }
+        format.html { redirect_to workers_path }
+      end
 
-    if @driver.id == @navigator.id
-      flash[:error] = "Driver cannot be the navigator" #doesn't display with js
-      render "workers/show" #doesn't happen with js
     else
+      @driver = Worker.find(params[:shift][:driver_id])
+      @navigator = Worker.find(params[:shift][:navigator_id])
+
+      @shift = Shift.new(params[:shift])
+      @shift.shiftActive = true  #SHIFT ACTIVE INDICATES THAT IT IS STARTED
+      @shift.inService = false #SHIFT IN SERVICE INDICATES THAT IT IS ACCEPTING RIDES
+      @shift.shiftActiveLength = 0.00
+
       @driver.activeShift = true
       @navigator.activeShift = true
 
       if @shift.save and @driver.save and @navigator.save
-        #flash[:success] = "Your shift has begun!"
         respond_to do |format|
           format.js
           format.html { redirect_to workers_path }
