@@ -1,15 +1,14 @@
 <div id="active">
 
   <div class="row-fluid">
-    <h1>Shift started at <%= current_worker.currentShift.created_at.strftime('%b %d %Y %I:%M %p') %></h1>
-    <h2><i>You have been working for <%= current_worker.currentShift.shiftLength %></i></h2>
+    <h1>Van Info</h1>
+    <h2><i>Shift started at <%= current_worker.currentShift.created_at.strftime('%b %d %Y %I:%M %p') %> (<%= current_worker.currentShift.shiftLength %>)</i></h2>
+    <h2><i>You have been accepting rides for <%= current_worker.currentShift.activeLength %></i></h2>
   </div>
 
-  <div class="row-fluid">
-    <h1>Do Not Accept Additional Ride Requests</h1>
-    <h2><i>You have been accepting rides for <%= current_worker.currentShift.activeLength %></i></h2>
-    <div id="becomeInactive">
-      <%= render "workers/elements/makeOffServiceForm" %>
+  <div class="row">
+    <div id="updateAddress">
+      <%= render "workers/elements/updateAddressForm" %>
     </div>
   </div>
 
@@ -28,6 +27,13 @@
   <div class="row-fluid">
     <h1>Current Ride Request Queue</h1>
     <div id="currentQueue">
+    </div>
+  </div>
+
+  <div class="row-fluid">
+    <h1>Do Not Accept Additional Ride Requests</h1>
+    <div id="becomeInactive">
+      <%= render "workers/elements/makeOffServiceForm" %>
     </div>
   </div>
 

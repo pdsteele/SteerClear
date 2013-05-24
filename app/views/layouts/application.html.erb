@@ -56,7 +56,7 @@
                   <!-- links for logged in workers -->
                   <li><%= link_to "Worker Dashboard", "/workers"  %></li>
                   <li><%= link_to "Edit Profile", "/workers/edit"  %></li>
-                  <li><%= link_to "Log Out", "/workers/sign_out", :data => { :confirm => "Warning: This will end your shift and re-queue any rides you have accepted. Please ensure you have completed your shift." }, method: "delete"  %></li>
+                  <li><%= link_to "Log Out", destroy_worker_session_path, :data => { :confirm => "Warning: This will end your shift and re-queue any rides you have accepted. Please ensure you have completed your shift." }, method: "delete"  %></li>
               <% else %> <!-- for non-logged on users/workers -->
                   <li><%= link_to "Sign Up", "/users/sign_up" %></li>
                   <li><%= link_to "Log In", "/users/sign_in" %></li>
@@ -107,6 +107,7 @@
     <!-- Javascripts
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <%= javascript_include_tag "application" %>
 
   </body>

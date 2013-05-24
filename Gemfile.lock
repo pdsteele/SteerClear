@@ -108,6 +108,8 @@ GEM
     formtastic-bootstrap (2.1.1)
       formtastic (~> 2.2)
     geocoder (1.1.8)
+    gmaps-autocomplete-rails (0.1.2.1)
+      rails (>= 3.1.0)
     has_scope (0.5.1)
     highline (1.6.18)
     hike (1.2.2)
@@ -119,6 +121,11 @@ GEM
     jquery-rails (2.2.1)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-tablesorter (1.4.1)
+      railties (~> 3.1)
+    jquery-ui-rails (4.0.3)
+      jquery-rails
+      railties (>= 3.1.0)
     json (1.7.7)
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
@@ -262,7 +269,10 @@ DEPENDENCIES
   formtastic
   formtastic-bootstrap
   geocoder (~> 1.1.8)
+  gmaps-autocomplete-rails
   jquery-rails
+  jquery-tablesorter
+  jquery-ui-rails
   kaminari
   launchy (~> 2.2.0)
   meta_search (>= 1.1.0.pre)

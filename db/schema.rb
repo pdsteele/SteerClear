@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130521220449) do
+ActiveRecord::Schema.define(:version => 20130524192719) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -50,6 +50,8 @@ ActiveRecord::Schema.define(:version => 20130521220449) do
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.float    "longitude"
+    t.float    "latitude"
   end
 
   create_table "shifts", :force => true do |t|
@@ -61,6 +63,12 @@ ActiveRecord::Schema.define(:version => 20130521220449) do
     t.boolean  "shiftActive"
     t.datetime "shiftEndTime"
     t.float    "shiftActiveLength"
+    t.string   "location"
+    t.string   "comment"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.boolean  "onCampus"
+    t.integer  "capacity"
   end
 
   add_index "shifts", ["driver_id", "navigator_id"], :name => "index_shifts_on_driver_id_and_navigator_id"

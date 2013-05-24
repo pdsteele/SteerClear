@@ -1,0 +1,7 @@
+$("#updateAddress").html('<%= escape_javascript(render('workers/elements/updateAddressForm')) %>');
+
+//gotta reload google maps stuff
+$(document).ready(function() {
+    GmapsAutoComplete.init();
+    GmapsAutoComplete.autoCompleteInit({region: 'williamsburg', country: 'us'});
+});

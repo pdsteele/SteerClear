@@ -1,0 +1,18 @@
+<h2><i>Maximum Size of Next Pickup: <%= current_worker.currentShift.capacity %></i></h2>
+<h2><i>Location: <%= current_worker.currentShift.location %></i></h2>
+
+<%= semantic_form_for(current_worker.currentShift, :url => workers_updateAddress_path, :remote => true ) do |f| %>
+    <div class="span3 form-inline onCampus ">
+      <%= f.check_box :onCampus, :id => "onCampus", :checked => false %>
+      <%= f.label "On campus building?" %>
+    </div>
+    <div class="span5">
+      <div class="locationField1">
+        <%= f.input :location, :label => false, :required => false, :input_html => { :value => "", :id => "gmaps-input-address", :style => "width:350px; font-size:14px", :placeholder => "Start typing an address or location (e.g. Green Leafe)" } %>   <!--, :style => "width:350px; font-size:19px"-->
+      </div>
+
+      <div class="locationField2"><%= f.input :location, :as => :select, :label => false, :collection => Building.all.map(&:name), :input_html => { :disabled => true, :style => "width:350px", :value => "" }, :wrapper_html => { :class => "lf2" } %></div>
+    </div>
+
+     <div class="span3 pull-right"><%= f.action :submit, :label => "Update", :button_html => { :class => "btn btn-primary", :disable_with => 'Wait...' } %></div>
+<% end %>

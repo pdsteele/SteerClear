@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 gem 'geocoder', '~> 1.1.8' #for address distances https://github.com/alexreisner/geocoder for how to use
+#gem 'gmaps4rails' #to put google maps into a page https://github.com/apneadiving/Google-Maps-for-Rails
 gem 'activeadmin', :github => 'gregbell/active_admin'  #https://github.com/gregbell/active_admin has good documentation
 gem 'sass-rails',   '~> 3.2.3'
 gem 'meta_search', '>= 1.1.0.pre'  #dependency for AA
@@ -13,6 +14,12 @@ gem 'thin' #use as server instead of webrick - webrick mucks up logging with boo
 gem 'formtastic' #for better forms with built in error reporting - similar syntax to AA - wiki is helpful here https://github.com/justinfrench/formtastic
 gem 'kaminari' #for pagination
 gem 'formtastic-bootstrap' #for styling formtastic forms with bootstrap
+gem 'jquery-tablesorter' #for sortable/filterable/paginated tables https://github.com/linjunpop/jquery-tablesorter-rails
+
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'gmaps-autocomplete-rails'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -50,7 +57,7 @@ group :production do
   gem 'pg', '0.12.2'
 end
 
-gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

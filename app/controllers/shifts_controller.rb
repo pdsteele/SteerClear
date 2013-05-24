@@ -19,6 +19,9 @@ class ShiftsController < ApplicationController
       @shift.shiftActive = true  #SHIFT ACTIVE INDICATES THAT IT IS STARTED
       @shift.inService = false #SHIFT IN SERVICE INDICATES THAT IT IS ACCEPTING RIDES
       @shift.shiftActiveLength = 0.00
+      @shift.location = "Police and Parking Services 23185"
+      @shift.onCampus = true
+      @shift.capacity = 8
 
       @driver.activeShift = true
       @navigator.activeShift = true
@@ -31,6 +34,25 @@ class ShiftsController < ApplicationController
       else
         flash[:error] = "Shift could not be started. Make sure you selected both a driver and a navigator"
         redirect_to "workers/show"
+      end
+    end
+  end
+
+  def updateAddress
+    @shift = current_worker.currentShift
+
+    #if params[:shift][:address1] == ""
+
+    if @shift.update_attributes(params[:shift])
+      respond_to do |format|
+        format.js
+        format.html { redirect_to workers_path }
+      end
+    else
+      flash[:error] = "Please enter a valid address within 7 miles of W&M. Also, please try omitting the city/state/zip-code."
+      respond_to do |format|
+        format.js { render :js => "window.location.href = '#{workers_path}'" }
+        format.html { redirect_to workers_path }
       end
     end
   end

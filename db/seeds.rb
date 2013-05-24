@@ -91,7 +91,7 @@ Building.create(name:'Sorority House 8: PM')
 Building.create(name:'Sorority House 9: KAT')
 Building.create(name:'Sorority House 10: DST')
 Building.create(name:'Sorority House 11: GPB')
-Building.create(name:'Sorority House 12: DP)')
+Building.create(name:'Sorority House 12: DP')
 Building.create(name:'Spotswood')
 Building.create(name:'Stith')
 Building.create(name:'Taliaferro')
@@ -114,5 +114,8 @@ Building.create(name:'Fraternity House 730 (DP)')
 Building.create(name:'Fraternity House 740 (BTP)')
 Building.create(name:'Fraternity House 750 (KDR)')
 Building.create(name:'Fraternity House 760')
+Building.create(name:'Police and Parking Services')
+
+#create an 'other user' for workers to make requests with that also owns common address book entries
 
 

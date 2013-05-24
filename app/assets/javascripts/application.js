@@ -12,5 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require gmaps-autocomplete
+//= require jquery-tablesorter
 //= require bootstrap
+//= require_tree .
+
+
+
+
+
+
