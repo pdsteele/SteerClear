@@ -2,34 +2,80 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993996f5-f357-4b30-a70c-ee6c30f19e71" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/workers/elements/_updateAddressForm.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shifts/updateAddress.js.erb" />
-      <change type="MOVED" beforePath="C:\Users\Philip\RubymineProjects\SteerClear\app\views\shifts\destroy.js.erb" afterPath="$PROJECT_DIR$/app/assets/stylesheets/gmaps.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SteerClear.iml" afterPath="$PROJECT_DIR$/.idea/SteerClear.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workers/_startedActive.html.erb" afterPath="$PROJECT_DIR$/app/views/workers/_startedActive.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workers/_startedNotActive.html.erb" afterPath="$PROJECT_DIR$/app/views/workers/_startedNotActive.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/building.rb" afterPath="$PROJECT_DIR$/app/models/building.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/shift.rb" afterPath="$PROJECT_DIR$/app/models/shift.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/shifts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/shifts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/workers.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/workers.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/workers.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/workers.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin-74c5a2a0ebd04577979929732488c14b.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin-cc7c3caf08c485a2dd2ae34d3e838b75.css.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin.css.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/admin_notes_icon-25b05cd8197f7a271d0624853a6dbdd5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/admin_notes_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/pages/application-876355994e28feb41d57e689ad61f443.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/application-eb47a5772ba9abf0537773fee66f3132.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/application.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/pages/application.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/datepicker/datepicker-header-bg-6f0baad739953cb1a0413c031841e82f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/datepicker/datepicker-header-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/datepicker/datepicker-input-icon-bfc0a6280a9bd52aa0048bda40a86ee2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/datepicker/datepicker-input-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/datepicker/datepicker-next-link-icon-0756e7b9d67c9ce07d8a73f05ad61fb2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/datepicker/datepicker-next-link-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/datepicker/datepicker-nipple-73672a71500080abed562eea4fee1f6a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/datepicker/datepicker-nipple.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/datepicker/datepicker-prev-link-icon-a4db9262208d627eebe731826a9099c1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/datepicker/datepicker-prev-link-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/fontawesome-webfont-635909f146e208b3509acdf3b154bf0d.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/fontawesome-webfont-6a4e273908b7e43d9e479d38b8ae5957.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/fontawesome-webfont-a0fbd98b232e7e1ef9cdaad813b26eb3.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/twitter/bootstrap/glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/twitter/bootstrap/glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/twitter/bootstrap/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/twitter/bootstrap/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/loading-09c1d6a0d3ba93d837f19a6f0fe13723.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/nested_menu_arrow-c4b3e54f9fb9b11993a2801e8ae15ae3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/nested_menu_arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/nested_menu_arrow_dark-049c0831c99b0c5af34bb95d30ba8174.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/nested_menu_arrow_dark.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/orderable-10610e1e8f0057c16f178b54cc4d9631.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/orderable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/print-e2186aeecceb677443527e791ac876ed.css.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/print.css.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/rails-a3386665c05a2d82f711a4aaa72d247c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/rails.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130520192230_add_to_shifts.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130521220449_add_active_length_to_shifts.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130522205529_add_comments_and_location_to_shifts.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130523234927_add_on_campus_to_shifts.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130524192719_add_capacity_to_shifts.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin-74c5a2a0ebd04577979929732488c14b.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin-cc7c3caf08c485a2dd2ae34d3e838b75.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/pages/application-876355994e28feb41d57e689ad61f443.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/application-eb47a5772ba9abf0537773fee66f3132.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/application.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/pages/application.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/index_list_icons/block_icon-d629dbfb55086a04ef7937def1036735.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/index_list_icons/block_icon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/index_list_icons/blog_icon-9be3599eb3bb0ce89cdd2ffe5ab29603.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/index_list_icons/blog_icon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/index_list_icons/grid_icon-f6c7bd19f29f1f1c03d8b2dd5f52623d.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/index_list_icons/grid_icon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/print-e2186aeecceb677443527e791ac876ed.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/print.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/index_list_icons/table_icon-27a56207a0edc2338de7ca50afaa41bc.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets _dev/active_admin/index_list_icons/table_icon.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SteerClear.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369423612997" ignored="false" />
+    <file path="/Dummy.txt" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1369438593025" ignored="false" />
     <file path="/README.md" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1367594208414" ignored="false" />
     <file path="/a.rxml" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1367607481678" ignored="false" />
     <file path="/a.coffee" changelist="993996f5-f357-4b30-a70c-ee6c30f19e71" time="1367607484061" ignored="false" />
@@ -188,7 +234,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="10" selection-start="1383" selection-end="1383" vertical-scroll-proportion="1.08413">
+            <state line="16" column="4" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.8044693">
               <folding />
             </state>
           </provider>
@@ -308,6 +354,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SteerClear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SteerClear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SteerClear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SteerClear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SteerClear" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -815,7 +893,11 @@
       <created>1369255899381</created>
       <updated>1369255899381</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="updatable location for shifts and capacities. shifts made geocoder friendly. buildings model adjusted for coordinates, but not loaded with exact coordinates yet. user story #14 now mostly complete">
+      <created>1369438596746</created>
+      <updated>1369438596746</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -843,16 +925,16 @@
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921347" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280899" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3277027" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995495" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6711712" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18996799" sideWeight="0.6565315" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18996799" sideWeight="0.6722973" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39977476" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995495" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34346846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34346846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995495" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -904,7 +986,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="errors made better for user story #14. also deprecated methods in forms were replaced with new methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="updatable location for shifts and capacities. shifts made geocoder friendly. buildings model adjusted for coordinates, but not loaded with exact coordinates yet. user story #14 now mostly complete" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -936,6 +1018,7 @@
     <MESSAGE value="many partials made for user story #14. worker creation fixed for bug #19. fixed last of issues for user sign up form w.r.t address fields" />
     <MESSAGE value="workers can properly start shifts, end shifts, and indicate that they are accepting rides for user story #14." />
     <MESSAGE value="errors made better for user story #14. also deprecated methods in forms were replaced with new methods" />
+    <MESSAGE value="updatable location for shifts and capacities. shifts made geocoder friendly. buildings model adjusted for coordinates, but not loaded with exact coordinates yet. user story #14 now mostly complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1050,7 +1133,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="10" selection-start="1383" selection-end="1383" vertical-scroll-proportion="1.08413">
+        <state line="16" column="4" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.8044693">
           <folding />
         </state>
       </provider>
