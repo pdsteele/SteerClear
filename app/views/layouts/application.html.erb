@@ -72,14 +72,14 @@
       <div class="row-fluid">  <!-- row for alerts -->
         <!--<div class="span6 offset3"><div class="alert-info"> <%= bootstrap_flash %></div></div> &lt;!&ndash; alerts may need more fixing &ndash;&gt;-->
         <div class="span6 offset3">
-        <div class="hidden-phone">
-          <% flash.each do |key, value| %>
-              <div class="alert alert-<%= key %>">
-                <%= value %>
-                <a class="close" data-dismiss="alert" href="#">&times;</a>
-              </div>
-          <% end %>
-        </div>
+          <div class="hidden-phone">
+            <% flash.each do |key, value| %>
+                <div class="alert alert-<%= key %>">
+                  <%= value %>
+                  <a class="close" data-dismiss="alert" href="#">&times;</a>
+                </div>
+            <% end %>
+          </div>
         </div>
 
         <div class="visible-phone phone-flashes">
@@ -90,9 +90,9 @@
               </div>
           <% end %>
         </div>
-       </div>  <!-- ends row fluid -->
+       <!--</div>  &lt;!&ndash; ends row fluid &ndash;&gt;-->
 
-      <div class="row-fluid"> <!-- content row -->
+      <!--<div class="row-fluid"> &lt;!&ndash; content row &ndash;&gt;-->
         <div class="span9"> <!-- renders content of the page -->
           <%= yield %>
         </div>

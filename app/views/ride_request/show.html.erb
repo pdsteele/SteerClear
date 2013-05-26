@@ -1,0 +1,19 @@
+<span class="content">
+  <b>Name: </b>
+  <%= @rideRequest.name %>
+</span>
+
+<span class="content">
+  <b>Phone: </b>
+  <%= @rideRequest.phone %>
+  <% if @rideRequest.text %>
+    (Will Receive Text Alerts)
+  <% else %>
+    (Will Call For Alerts)
+  <% end  %>
+</span>
+
+<span class="content">
+  <b>Name: </b>
+  <%= @rideRequest.name %>
+</span>

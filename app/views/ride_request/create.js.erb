@@ -1,0 +1,5 @@
+//Must be compatible with both worker and user views
+// use same div id for both and implement similarly in views
+// or use different div ids and do not include the other id in each view
+
+$(".newRequest").html('<%= escape_javascript(render('users/active')) %>');

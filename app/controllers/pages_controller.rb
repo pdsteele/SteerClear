@@ -3,8 +3,14 @@ class PagesController < ApplicationController
 
   def home #for home page
     @numShifts = Shift.activeShifts.count
+
     if @numShifts != 0
-      flash[:success] = "Steer Clear is current accepting ride requests with " + @numShifts + " vans operating! Log in and request a ride!"
+      if @numShifts == 1
+        @numShifts = @numShifts.to_s + " van "
+      else
+        @numShifts = @numShifts.to_s + " vans "
+      end
+      flash[:success] = "Steer Clear is current accepting ride requests with " + @numShifts + "operating! Log in and request a ride!"
     else
       flash[:notice] = "Steer Clear is currently closed and not accepting any ride requests :( Please check the about page for our hours of operation."
     end

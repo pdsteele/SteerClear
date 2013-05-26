@@ -1,0 +1,8 @@
+<div class="form-page">
+  <%= semantic_form_for(@rideRequest, :url => destroyRequest_path) do |f| %>
+      <%= f.input :id, :as => :hidden, :input_html => { :value => @rideRequest.id } %>
+
+      <div class="row-fluid" id="button"><%= f.action :submit, :label => "Delete Ride Request", :button_html => { :class => "btn btn-large btn-primary", :disable_with => 'Wait...' } %></div>
+
+  <% end %>  <!-- end form -->
+</div>

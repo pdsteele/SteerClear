@@ -15,7 +15,22 @@
 #  place = autocomplete.getPlace()
 #  console.log place.address_components
 $(document).ready ->
-  GmapsAutoComplete.init()
+  GmapsAutoComplete.init
+    inputField: '#gmaps-input-address',
+    errorField: '#gmaps-error'
+  GmapsAutoComplete.autoCompleteInit
+    region: "williamsburg"
+    country: "us"
+  return  #coffeescript otherwise returns the last line
+
+#secondFieldptions
+#  inputField: '#gmaps-input-address2',
+#  errorField: '#gmaps-error2'
+
+$(document).ready ->
+  GmapsAutoComplete.init
+    inputField: '#2gmaps-input-address',
+    errorField: '#2gmaps-error'
   GmapsAutoComplete.autoCompleteInit
     region: "williamsburg"
     country: "us"
@@ -23,21 +38,5 @@ $(document).ready ->
 
 
 
-#in order to autoload correct fields when editing
-if $("#onCampus").is(":checked")
-  $(".lf2 :input").removeAttr "disabled"
-  $(".locationField1").slideToggle "fast"
-  $(".locationField2").slideToggle "fast"
 
 
-#for address field selection between on and off campus
-jQuery ->
-  $("#onCampus").on "click", (e) ->
-    #if address 2 is hidden, enable it
-    if ($(".locationField2").is(":hidden"))
-      $('.lf2 :input').removeAttr('disabled')
-    else
-      $('.lf2 :input').attr('disabled', true)
-
-    $(".locationField1").slideToggle "fast"
-    $(".locationField2").slideToggle "fast"

@@ -20,7 +20,7 @@
                 <%= f.label "Is this an on campus building?" %>
               </div>
               <div class="address1">
-                <%= f.input :address, :as => :string, :label => "House/Apt Number and Street", :append => ' Williamsburg, VA' %>
+                <%= f.input :address, :as => :string, :label => "House/Apt Number and Street", :input_html => { :value => "", :id => "gmaps-input-address", :style => "width:350px; font-size:14px", :placeholder => "Start typing an address or location (e.g. Green Leafe)" } %>
               </div>
               <div class="address2">
                 <!-- has secondary class of ad2 for disabling the field with jquery -->

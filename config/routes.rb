@@ -19,6 +19,11 @@ SteerClear::Application.routes.draw do
   match '/workers/endShift/', :to => 'shifts#endShift'
   match '/workers/updateAddress', :to => 'shifts#updateAddress'
 
+  match '/createRequest', :to => 'rideRequests#create'
+  match '/users/showRequest/:id(.:format)', :to => 'rideRequests#show'
+  match '/updateRequest', :to => 'rideRequests#update'
+  match '/destroyRequest/', :to => 'rideRequests#destroy'
+
 
   match '/users', :to => 'users#show'
   match '/workers', :to => 'workers#show'

@@ -11,6 +11,8 @@ class Worker < ActiveRecord::Base
 
   has_many :drivingShifts, foreign_key: "driver_id", :class_name => "Shift"
   has_many :navShifts, foreign_key: "navigator_id", :class_name => "Shift"
+  has_many :driver_ride_requests, through: :drivingShifts, source: :ride_requests
+  has_many :nav_ride_requests, through: :navShifts, source: :ride_requests
 
   validates :name,  :presence => true
   validates :email, :presence => true,

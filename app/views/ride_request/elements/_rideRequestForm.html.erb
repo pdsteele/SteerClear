@@ -1,0 +1,52 @@
+<div class="form-page" style="border: solid">
+    <%= semantic_form_for(@rideRequest, :url => requestPath(@rideRequest), :remote => true) do |f| %>
+      <%= f.inputs "Party Information" do %>
+          <% if user_signed_in? %>
+              <%= f.input :name, :label => "Your Name" %>
+              <%= f.input :user_id, :as => :hidden, :input_html => { :value => current_user.id } %>
+          <% elsif worker_signed_in? %>
+              <%= f.input :name, :label => "User's Name" %>
+              <%= f.input :user_id, :as => :select, :collection => User.order("name ASC").all.map{ |user| [user.email, user.id] }, :hint => "Use 'Other' user for people without an account" %>
+          <% end %>
+
+          <%= f.input :phone, :label => "Best Phone Number To Contact" %>
+          <div class="form-inline"><%= f.input :text, :label => "Receive Text Alerts?" %></div>
+          <%= f.input :partySize, :label => "Size of Party", :as => :select, :collection => (1..8).to_a %>
+      <% end %> <!-- end input section -->
+
+      <%= f.inputs "Pickup Address" do %>
+          <div class="form-inline onCampus">
+            <%= f.check_box :pickupOnCampus, :id => "onCampus" %>
+            <%= f.label "Is this an on campus building?" %>
+          </div>
+          <div class="address1">
+            <%= f.input :pickupAddress, :as => :string, :label => "House/Apt Number and Street", :input_html => { :id => "gmaps-input-address", :style => "width:350px; font-size:14px", :placeholder => "Start typing an address or location (e.g. Green Leafe)" } %>
+          </div>
+          <div class="address2">
+            <!-- has secondary class of ad2 for disabling the field with jquery -->
+            <%= f.input :pickupAddress, :as => :select, :collection => Building.all.map(&:name), :label => 'Campus Building', :input_html => { :disabled => true }, :wrapper_html => { :class => "ad2" } %>
+          </div>
+      <% end %> <!-- end input section -->
+
+      <%= f.inputs "Destination Address" do %>
+          <div class="form-inline onCampus">
+            <%= f.check_box :destOnCampus, :id => "onCampus2" %>
+            <%= f.label "Is this an on campus building?" %>
+          </div>
+          <div class="address12">
+            <%= f.input :destAddress, :as => :string, :label => "House/Apt Number and Street", :input_html => { :id => "2gmaps-input-address", :style => "width:350px; font-size:14px", :placeholder => "Start typing an address or location (e.g. Green Leafe)" } %>
+          </div>
+          <div class="address22">
+            <!-- has secondary class of ad22 for disabling the field with jquery -->
+            <%= f.input :destAddress, :as => :select, :collection => Building.all.map(&:name), :label => 'Campus Building', :input_html => { :disabled => true }, :wrapper_html => { :class => "ad22" } %>
+          </div>
+      <% end %> <!-- end input seciton -->
+
+      <% if @rideRequest.state.nil? %>
+          <div class="row-fluid" id="button"><%= f.action :submit, :label => "Create Ride Request", :button_html => { :class => "btn btn-large btn-primary", :disable_with => 'Wait...' } %></div>
+      <% else %>
+          <div class="row-fluid" id="button"><%= f.action :submit, :label => "Update Ride Request", :button_html => { :class => "btn btn-large btn-primary", :disable_with => 'Wait...' } %></div>
+      <% end %>
+
+  <% end %>  <!-- end form -->
+</div>

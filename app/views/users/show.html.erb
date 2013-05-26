@@ -1,15 +1,26 @@
 <!-- main user page that shows active ride requests, old ride requests, and form to create new ride request -->
 <!-- use .js for all form submission and coffeescript for showing/hiding tables -->
 
-<div class="row-fluid">
-  <div class="span10 offset3">
+<div class="span10 offset3">
+  <div class="row-fluid">
     <h1><%= current_user.name %>'s Ride Requests</h1>
+  </div>
 
-    <h1>Create a new Ride Request</h1>
+  <% if @rideRequest.nil? %>
+    <h2><i>Steer Clear is not currently accepting ride requests</i></h2>
+    <h2><i>Please check the about page for our hours of operation</i></h2>
+  <% elsif @rideRequest.state.nil? %>
+      <h2><i>Steer Clear is open and accepting ride requests!</i></h2>
+    <%= render "ride_request/elements/createRideRequestForm" %>
 
-    <h1>Active Ride Requests</h1>
+  <% else  %>
+    <%= render "users/active" %>
+  <% end %>
 
+  <div class="row-fluid">
     <h1>Past Ride Requests</h1>
+    <!--render ride request table - try to make it DRY and use the same table as worker's tables-->
+  </div>
 
   </div>
 </div>

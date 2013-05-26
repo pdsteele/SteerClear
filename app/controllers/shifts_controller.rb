@@ -2,6 +2,7 @@ class ShiftsController < ApplicationController
   before_filter :authenticate_worker!
 
   def create
+    #REFACTOR THIS AND BUILD MORE OF IT INTO SHIFT MODEL EVENTUALLY
 
     #catch if worker input identical nav/driver or didn't fill either in
     if (params[:shift][:driver_id] == params[:shift][:navigator_id] || params[:shift][:driver_id] == "" || params[:shift][:navigator_id] == "")

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130524192719) do
+ActiveRecord::Schema.define(:version => 20130525014221) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -52,6 +52,29 @@ ActiveRecord::Schema.define(:version => 20130524192719) do
     t.datetime "updated_at", :null => false
     t.float    "longitude"
     t.float    "latitude"
+  end
+
+  create_table "ride_requests", :force => true do |t|
+    t.string   "name"
+    t.string   "phone"
+    t.boolean  "text"
+    t.integer  "shift_id"
+    t.string   "state"
+    t.integer  "partySize"
+    t.datetime "pickUpTime"
+    t.datetime "dropOffTime"
+    t.float    "waitTime"
+    t.string   "pickupAddress"
+    t.boolean  "pickupOnCampus"
+    t.float    "pickupLong"
+    t.float    "pickupLat"
+    t.string   "destAddress"
+    t.boolean  "destOnCampus"
+    t.float    "destLong"
+    t.float    "destLat"
+    t.integer  "user_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "shifts", :force => true do |t|

@@ -5,6 +5,7 @@ class Shift < ActiveRecord::Base
 
   belongs_to :driver, :class_name => "Worker", foreign_key: "driver_id"
   belongs_to :navigator, :class_name => "Worker", foreign_key: "navigator_id"
+  has_many :ride_requests
 
   geocoded_by :location
   before_validation :checkLocation
